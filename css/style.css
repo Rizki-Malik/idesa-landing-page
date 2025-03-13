@@ -6,7 +6,7 @@
     --dark: #14183E;
 }
 
-@media (min-width:1200px) {
+@media screen and (min-width: 1101px) {
     .under {
         position: absolute;
         left: 1200px;
@@ -24,7 +24,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media screen and (max-width: 1100px) and (min-width: 768px) {
     .under {
         position: absolute;
         left: 580px;
