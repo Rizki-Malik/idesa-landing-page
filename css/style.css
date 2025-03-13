@@ -6,6 +6,19 @@
     --dark: #14183E;
 }
 
+.under {
+    position: absolute;
+    left: 1200px;
+    top: 100px;
+    z-index: 1;
+}
+  
+.over {
+    position: absolute;
+    left: 1100px;
+    top: 100px;
+    z-index: 2;
+}
 
 /*** Spinner ***/
 #spinner {
