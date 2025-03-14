@@ -6,6 +6,120 @@
     --dark: #14183E;
 }
 
+/* Animasi About IMG */
+.about-img {
+    width: 150px;
+    box-shadow: 5px 10px 10px rgba(20, 24, 62, 0.5);
+    border-radius: 10%;
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: #ddd;
+    height: 150px;
+    object-fit: cover;
+}
+
+.a1 {
+    margin-right: 15px;
+    animation: scale-pulse 4s ease-in-out infinite;
+    animation-delay: 0s;
+    margin-top: 50px;
+}
+
+.a2 {
+    width: 210px;
+    height: 200px;
+    margin-bottom: 10px;
+    animation: scale-pulse 4s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+
+.a3 {
+    margin-left: 15px;
+    animation: scale-pulse 4s ease-in-out infinite;
+    animation-delay: 1s;
+    margin-top: 50px;
+}
+
+.a4 {
+    margin-right: 15px;
+    animation: scale-pulse 4s ease-in-out infinite;
+    animation-delay: 1.5s;
+}
+
+.a5 {
+    margin-top: 10px;
+    width: 210px;
+    height: 200px;
+    animation: scale-pulse 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.a6 {
+    margin-left: 15px;
+    animation: scale-pulse 4s ease-in-out infinite;
+    animation-delay: 2.5s;
+}
+
+@keyframes scale-pulse {
+    0% {
+        transform: scale(0.75);
+        z-index: 1;
+    }
+    30% {
+        transform: scale(0.90);
+        z-index: 10;
+        box-shadow: 0 14px 28px rgba(20, 24, 62, 0.6);
+    }
+    60% {
+        transform: scale(1);
+        z-index: 1;
+        box-shadow: 5px 10px 10px rgba(20, 24, 62, 0.5);
+    }
+    100% {
+        transform: scale(0.75);
+        z-index: 1;
+    }
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+.about-img:hover {
+    transform: scale(1.2) translateY(-10px) rotate(5deg);
+    box-shadow: 8px 15px 15px rgba(20, 24, 62, 0.4);
+    z-index: 20;
+    animation-play-state: paused;
+}
+
+.about-img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10%;
+    background: transparent;
+    box-shadow: 0 0 0px 0px rgba(66, 135, 245, 0);
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+.about-img:hover::after {
+    box-shadow: 0 0 20px 5px rgba(66, 135, 245, 0.7);
+}
+
+.image-container:hover .about-img:not(:hover) {
+    opacity: 0.7;
+    filter: blur(1px);
+    transform: scale(0.95);
+}
+/* END ANIMASI */
+
 @media screen and (min-width: 1101px) {
     .under {
         position: absolute;
