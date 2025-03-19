@@ -18,6 +18,20 @@
     object-fit: cover;
 }
 
+@media screen and (max-width: 767px) {
+    .about-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 .a1 {
     margin-right: 15px;
     animation: scale-pulse 4s ease-in-out infinite;
@@ -60,6 +74,36 @@
     animation-delay: 2.5s;
 }
 
+@media screen and (max-width: 767px) {
+    .a2, .a5 {
+        width: 170px;
+        height: 160px;
+    }
+    
+    .a1, .a3, .a4, .a6 {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .a2, .a5 {
+        width: 140px;
+        height: 130px;
+    }
+    
+    .a1, .a3 {
+        margin-top: 20px;
+    }
+    
+    .a1 {
+        margin-right: 10px;
+    }
+    
+    .a3, .a6 {
+        margin-left: 10px;
+    }
+}
+
 @keyframes scale-pulse {
     0% {
         transform: scale(0.75);
@@ -88,6 +132,37 @@
     position: relative;
     margin: 0 auto;
     perspective: 1000px;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 991px) {
+    .about-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .image-container {
+        perspective: 300px;
+        max-width: 95%;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .about-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .about-img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .about-img:hover {
@@ -123,36 +198,68 @@
 @media screen and (min-width: 1101px) {
     .under {
         position: absolute;
-        left: 1200px;
+        right: 5%;
+        left: auto;
         top: 100px;
         z-index: 1;
         width: 500px;
+        max-width: 40%;
     }
     
     .over {
         position: absolute;
-        left: 1100px;
+        right: 20%;
+        left: auto;
         top: 100px;
         z-index: 2;
         width: 300px;
+        max-width: 25%;
     }
 }
 
 @media screen and (max-width: 1100px) and (min-width: 768px) {
     .under {
         position: absolute;
-        left: 580px;
+        right: 5%;
+        left: auto;
         top: 150px;
         z-index: 1;
-        width: 500px;
+        width: 400px;
+        max-width: 45%;
     }
     
     .over {
         position: absolute;
-        left: 550px;
+        right: 20%;
+        left: auto;
         top: 150px;
         z-index: 2;
         width: 250px;
+        max-width: 30%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .under, .over {
+        position: relative;
+        left: auto;
+        right: auto;
+        top: auto;
+        margin: 0 auto;
+        max-width: 90%;
+        display: block;
+    }
+    
+    .under {
+        width: 300px;
+        z-index: 1;
+        margin-bottom: 20px;
+    }
+    
+    .over {
+        width: 200px;
+        z-index: 2;
+        margin-bottom: 30px;
     }
 }
 
