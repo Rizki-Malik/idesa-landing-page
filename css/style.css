@@ -410,6 +410,17 @@ h6,
     color: var(--light);
 }
 
+/*** Service Header ***/
+.service-header {
+    margin-top: -75px;
+    background: url(../img/bg-hero.png) center center no-repeat;
+    background-size: cover;
+    background-color: beige;
+}
+
+.service-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light);
+}
 
 /*** Section Title ***/
 .section-title::before {
