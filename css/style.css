@@ -74,6 +74,36 @@
     animation-delay: 2.5s;
 }
 
+.img-responsive {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-responsive {
+        max-width: 350px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .img-responsive {
+        max-width: 750px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .img-responsive {
+        max-width: 970px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img-responsive {
+        max-width: 1170px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .a2, .a5 {
         width: 170px;
