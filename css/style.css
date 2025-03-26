@@ -428,6 +428,100 @@ h6,
     }
 }
 
+.position-responsive {
+    --text-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 600px;
+}
+
+.position-responsive h2 {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.position-responsive p {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1657px) {
+    .position-responsive {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1656px) {
+    .position-responsive {
+        position: absolute;
+        left: 0;
+    }
+
+    .position-responsive h2 {
+        color: var(--text-color);
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1571px) and (max-width: 1656px) {
+    .position-responsive {
+        bottom: 15%;
+    }
+    
+    .position-responsive p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (min-width: 1531px) and (max-width: 1570px) {
+    .position-responsive {
+        bottom: 10%;
+    }
+    
+    .position-responsive p {
+        font-size: 15px;
+        line-height: 2.2;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    .position-responsive {
+        position: relative;
+        max-width: 100%;
+    }
+    
+    .position-responsive p {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .position-responsive {
+        padding: 3rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .position-responsive {
+        position: static;
+        padding: 1rem;
+    }
+    
+    .position-responsive p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
 
 /*** Hero Header ***/
 .hero-header {
