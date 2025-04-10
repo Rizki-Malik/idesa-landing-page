@@ -6,6 +6,11 @@
     --dark: #14183E;
 }
 
+.bg-eis{
+    background: url(../img/command.png) center center no-repeat;
+    background-size: cover;
+}
+
 /* Animasi About IMG */
 .about-img {
     width: 150px;
@@ -79,6 +84,33 @@
     display: block;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.img-hand {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 820px;
+}
+
+.img-mobile {
+    width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .img-mobile {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img-mobile {
+        padding: 0 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -918,3 +950,957 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+/* Start Smart Government */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.bg-primary {
+    background-color: #0d6efd;
+}
+
+.dashboard-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.user-avatars {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    max-width: 100%;
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+.avatar-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #D9D9D9;
+}
+
+.avatar-label {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 15px;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.dashboard-display {
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+.laptop-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    height: auto;
+}
+
+.idesa-app-text {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.dashboard-features {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+    max-width: 100%;
+}
+
+/* Rest of the code remains the same but with added width: 100% where needed */
+
+@media (max-width: 1350px) {
+    .dashboard-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        overflow-x: hidden;
+    }
+    
+    .user-avatars, .dashboard-features {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        overflow-x: hidden;
+    }
+    
+    /* Rest of the media queries remain the same */
+}
+.container {
+    max-width: 1320px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.bg-primary {
+    background-color: #0d6efd;
+}
+
+.dashboard-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 2rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.user-avatars {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.avatar-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-item {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.avatar-label {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 15px;
+    width: 80px;
+}
+
+.dashboard-display {
+    position: relative;
+    max-width: 500px;
+    text-align: center;
+    z-index: 2;
+}
+
+.laptop-image {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+}
+
+.idesa-app-text {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dashboard-features {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.feature-group {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.feature-content {
+    margin-left: 15px;
+    max-width: 200px;
+}
+
+.feature-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+
+.feature-description {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.connector-point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.connector-point-left {
+    background-color: rgba(21, 172, 225, 0.4); /* Using secondary color from root */
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.connector-point-right {
+    background-color: rgba(19, 99, 198, 0.4); /* Using primary color from root */
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+/* Ukuran connector point yang dapat dikustomisasi */
+.connector-point.size-small {
+    width: 15px;
+    height: 15px;
+}
+
+.connector-point.size-large {
+    width: 25px;
+    height: 25px;
+}
+
+/* Warna inner circle yang dapat dikustomisasi */
+.connector-point.color-success .inner-circle {
+    background-color: #fff
+}
+
+.connector-point.color-warning .inner-circle {
+    background-color: #fff
+}
+
+.connector-point.color-danger .inner-circle {
+    background-color: #fff
+}
+
+/* Warna connector line yang dapat dikustomisasi */
+.connector-point.color-success .left-connector,
+.connector-point.color-success .right-connector {
+    background-color: #fff
+}
+
+.connector-point.color-warning .left-connector,
+.connector-point.color-warning .right-connector {
+    background-color: #fff
+}
+
+.connector-point.color-danger .left-connector,
+.connector-point.color-danger .right-connector {
+    background-color: #fff
+}
+
+/* Kustomisasi vertical connector */
+.vertical-connector.color-success {
+    background-color: #fff
+}
+
+.vertical-connector.color-warning {
+    background-color: #fff
+}
+
+.vertical-connector.color-danger {
+    background-color: #fff;
+}
+
+.vertical-connector.thickness-thin {
+    width: 1px;
+}
+
+.vertical-connector.thickness-medium {
+    width: 3px;
+}
+
+.vertical-connector.thickness-thick {
+    width: 5px;
+}
+
+.connector-point:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.inner-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.connector-point-left .inner-circle {
+    background-color: var(--secondary);
+}
+
+.connector-point-right .inner-circle {
+    background-color: var(--primary);
+}
+
+.connection-line {
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+/* Kustomisasi connection line */
+.connection-line.color-success {
+    background-color: rgb(40, 167, 69);
+}
+
+.connection-line.color-warning {
+    background-color: rgb(255, 193, 7);
+}
+
+.connection-line.color-danger {
+    background-color: rgb(220, 53, 69);
+}
+
+.connection-line.thickness-thin {
+    height: 1px;
+}
+
+.connection-line.thickness-medium {
+    height: 3px;
+}
+
+.connection-line.thickness-thick {
+    height: 5px;
+}
+
+.connection-line-left {
+    left: 23%;
+    width: 100px;
+}
+
+.connection-line-right {
+    right: 24%;
+    width: 100px;
+}
+
+.connection-text {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+}
+
+.left-connector {
+    position: absolute;
+    top: 50%;
+    right: -75px;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.connector-point-left .left-connector {
+    background-color: var(--secondary);
+    height: 3px;
+}
+
+.right-connector {
+    position: absolute;
+    top: 50%;
+    left: -45px;
+    width: 80px;
+    height: 2px;
+    background-color: white;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.connector-point-right .right-connector {
+    background-color: var(--primary);
+    height: 3px;
+}
+
+.vertical-connector {
+    position: absolute;
+    width: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.vertical-connector-left {
+    left: 22.8%;
+    top: 127px;
+    height: 370px;
+    background-color: var(--secondary);
+}
+
+.vertical-connector-right {
+    right: 24%;
+    top: 12px;
+    height: 560px;
+    background-color: var(--primary);
+}
+
+@media (max-width: 1350px) {
+    .dashboard-container {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+    
+    .user-avatars, .dashboard-features {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .user-avatars {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .dashboard-features {
+        margin-top: 2rem;
+    }
+    
+    .avatar-group, .feature-group {
+        justify-content: center;
+        width: auto;
+        margin: 0.5rem;
+    }
+    
+    .connection-line,
+    .left-connector, 
+    .right-connector {
+        display: none;
+    }
+
+    .vertical-connector {
+        display: none;
+    }
+
+    .vertical-connector-left,
+    .vertical-connector-right {
+        top: auto;
+        height: 30px;
+    }
+    
+    .dashboard-display {
+        margin: 2rem 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .idesa-app-text {
+        position: static;
+        margin-top: 1rem;
+    }
+
+    .connector-point {
+        display: none;
+    }
+
+    .feature-content {
+        text-align: center;
+        margin: 1rem auto;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .user-avatars {
+        gap: 0.5rem;
+    }
+    
+    .avatar-group, .feature-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0.25rem;
+    }
+
+    .avatar-item {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .avatar-label {
+        font-size: 0.875rem;
+        width: auto;
+        margin-right: 5px;
+    }
+    
+    .feature-title {
+        font-size: 0.875rem;
+    }
+    
+    .feature-description {
+        font-size: 0.75rem;
+    }
+    
+    .dashboard-display {
+        max-width: 300px;
+    }
+    
+    .vertical-connector-left,
+    .vertical-connector-right {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-container {
+        padding: 1rem 0.25rem;
+    }
+    
+    .user-avatars {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .avatar-group {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    
+    .avatar-item {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .avatar-label {
+        font-size: 0.75rem;
+        width: 60px;
+    }
+    
+    .dashboard-display {
+        max-width: 250px;
+    }
+    
+    .feature-group {
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    
+    .feature-content {
+        max-width: 200px;
+    }
+    
+    .feature-title {
+        font-size: 0.8rem;
+    }
+    
+    .feature-description {
+        font-size: 0.7rem;
+    }
+}
+/* End Smart Government */
+/* Start Smart Society */
+.bg-society {
+    background-color: var(--primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-society .feature-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.bg-society .feature-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bg-society h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.bg-society h4 {
+    font-weight: 600;
+}
+
+.bg-society p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.bg-society .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries for Smart Society section */
+@media (max-width: 1199px) {
+    .bg-society h1 {
+        font-size: 2.7rem;
+    }
+    
+    .bg-society .fs-4 {
+        font-size: 1.25rem !important;
+    }
+    
+    .bg-society .fs-6 {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .bg-society h1 {
+        font-size: 2.5rem;
+    }
+    
+    .bg-society .fs-4 {
+        font-size: 1.2rem !important;
+    }
+    
+    .bg-society .fs-6 {
+        font-size: 0.85rem !important;
+    }
+    
+    .bg-society .feature-item {
+        padding: 1.25rem !important;
+        margin-bottom: 1.5rem;
+    }
+    
+    .bg-society .row.g-5 {
+        --bs-gutter-y: 2rem !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-society .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+    .bg-society h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .bg-society .col-md-6 {
+        margin-bottom: 1rem;
+    }
+    
+    /* Ensure mobile image doesn't get too large */
+    .bg-society img[src="img/mobile.png"] {
+        max-height: 500px !important;
+    }
+    
+    /* Order columns on mobile */
+    .bg-society .wow.fadeInLeft {
+        order: 2;
+    }
+    
+    .bg-society .wow.fadeInUp {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+    
+    .bg-society .wow.fadeInRight {
+        order: 3;
+    }
+}
+
+@media (max-width: 575px) {
+    .bg-society .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    .bg-society h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .bg-society .feature-item {
+        padding: 1rem !important;
+        margin-bottom: 1.25rem;
+    }
+    
+    .bg-society .fs-4 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .bg-society .fs-6 {
+        font-size: 0.8rem !important;
+    }
+    
+    /* Adjust image sizes on very small screens */
+    .bg-society .col-4 {
+        width: 25%;
+    }
+    
+    .bg-society .col-8 {
+        width: 75%;
+    }
+    
+    /* Ensure mobile image isn't too large */
+    .bg-society img[src="img/mobile.png"] {
+        max-height: 350px !important;
+    }
+}
+/* End Smart Society */
+/* Start Smart Economy */
+.feature-card {
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        padding: 1.5rem !important;
+    }
+    
+    .feature-icon {
+        width: 45px !important;
+    }
+}
+/* End Smart Economy */
+/* Start Join Us */
+.inter{
+    font-family: Inter, sans-serif;
+}
+.card-joinus {
+    background-color: rgba(217, 217, 217, 0.2);
+    width: auto;
+    padding: 18px 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    max-width: 90%;
+    overflow: hidden;
+    font-size: larger;
+}
+
+.j-1 {
+    border-left: 5px solid #1C1C1C;
+}
+
+.j-2 {
+    border-left: 5px solid #3D8BB9;
+}
+
+.j-3 {
+    border-left: 5px solid #EC1F28;
+}
+
+.j-4 {
+    border-left: 5px solid #064E79;
+}
+
+/* Hover effects for join us cards */
+.card-joinus:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-joinus h5 {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .card-joinus {
+        padding: 15px 20px;
+        margin-bottom: 20px;
+    }
+    
+    .card-joinus h5 {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-joinus {
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+}
+
+.card-joinus h5 {
+    position: relative;
+}
+
+.card-joinus:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-left-width: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-joinus {
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border-left: 4px solid #1363C6;
+    }
+    
+    .box-black, .box-blue, .box-red, .box-green {
+        width: 28px;
+        height: 28px;
+        right: -14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid.bg-light.service-header.vh-100.mt-1.pl-5.pt-5 {
+        height: auto !important;
+        min-height: 100vh;
+        padding: 3rem 1rem !important;
+    }
+    
+    .card-joinus {
+        padding: 12px 15px;
+        margin-bottom: 15px;
+    }
+    
+    .box-black, .box-blue, .box-red, .box-green {
+        width: 22px;
+        height: 22px;
+        right: -11px;
+    }
+}
+/* End Join Us */
