@@ -10,6 +10,37 @@
     }, 1);
   };
   spinner();
+  
+  // Smooth scrolling for navbar links and footer links
+  $(".navbar-nav a, .back-to-top, .btn-link, .footer-menu a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top - 70
+        },
+        800,
+        "easeInOutExpo"
+      );
+      
+      // Add active class to clicked nav item and remove from others
+      $(".navbar-nav a").removeClass("active");
+      $(this).addClass("active");
+    }
+  });
+  
+  // Add active class based on scroll position
+  $(window).scroll(function () {
+    var position = $(this).scrollTop();
+    $(".navbar-nav a").each(function() {
+      var target = $($(this).attr("href"));
+      if (target.length && position >= target.offset().top - 100 && position <= target.offset().top + target.height()) {
+        $(".navbar-nav a").removeClass("active");
+        $(this).addClass("active");
+      }
+    });
+  });
 
   // Initiate the wowjs
   new WOW().init();

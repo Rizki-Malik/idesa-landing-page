@@ -86,6 +86,13 @@
     max-width: 1200px;
 }
 
+.map-indonesia {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .img-hand {
     height: auto;
     display: block;
@@ -262,7 +269,8 @@
         position: absolute;
         right: 5%;
         left: auto;
-        top: 100px;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 1;
         width: 500px;
         max-width: 40%;
@@ -272,7 +280,8 @@
         position: absolute;
         right: 20%;
         left: auto;
-        top: 100px;
+        top: 50%;
+        transform: translateY(-50%);
         z-index: 2;
         width: 300px;
         max-width: 25%;
@@ -307,6 +316,7 @@
         left: auto;
         right: auto;
         top: auto;
+        transform: none;
         margin: 0 auto;
         max-width: 90%;
         display: block;
@@ -322,6 +332,11 @@
         width: 200px;
         z-index: 2;
         margin-bottom: 30px;
+    }
+    
+    .hero-header {
+        padding-top: 100px;
+        padding-bottom: 30px;
     }
 }
 
@@ -550,6 +565,12 @@ h6,
     margin-top: -75px;
     background: url(../img/bg-hero.png) center center no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 75px; /* Compensate for navbar height */
+    padding-bottom: 0;
+    position: relative;
 }
 
 .hero-header .breadcrumb-item+.breadcrumb-item::before {
