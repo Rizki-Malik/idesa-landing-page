@@ -2075,15 +2075,6 @@ body {
     margin-bottom: 2rem;
 }
 
-.bg-society h4 {
-    font-weight: 600;
-}
-
-.bg-society p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-}
-
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -2094,27 +2085,11 @@ body {
     .bg-society h1 {
         font-size: 2.7rem;
     }
-    
-    .bg-society .fs-4 {
-        font-size: 1.25rem !important;
-    }
-    
-    .bg-society .fs-6 {
-        font-size: 0.9rem !important;
-    }
 }
 
 @media (max-width: 991px) {
     .bg-society h1 {
         font-size: 2.5rem;
-    }
-    
-    .bg-society .fs-4 {
-        font-size: 1.2rem !important;
-    }
-    
-    .bg-society .fs-6 {
-        font-size: 0.85rem !important;
     }
     
     .bg-society .feature-item {
