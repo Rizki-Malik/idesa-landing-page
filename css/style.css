@@ -726,6 +726,10 @@ h6,
     background-size: cover;
 }
 
+.indo {
+    background: url(../img/bg-hero-1.png) center center no-repeat;
+    background-size: cover;
+}
 
 /*** Newsletter ***/
 .newsletter {
