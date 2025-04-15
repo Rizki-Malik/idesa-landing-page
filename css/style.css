@@ -112,6 +112,9 @@
     .img-mobile {
         max-width: 100%;
     }
+    .img-hand {
+        max-width: 100%; 
+    }
 }
 
 @media screen and (max-width: 480px) {
