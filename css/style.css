@@ -332,6 +332,31 @@ a{
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    #about .image-container img {
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+    
+    #about .reason-item p {
+        font-size: 0.9rem !important;
+    }
+    
+    #about h1 {
+        font-size: 1.75rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #about .px-3 {
+        padding: 1rem !important;
+    }
+    
+    #about .reason-item {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .about-img {
         width: 120px;
@@ -1080,7 +1105,6 @@ h6,
 .feature {
     background: url(../img/bg-hero.png) center center no-repeat;
     background-size: cover;
-    height: 100vh !important;
 }
 
 .bg-black{
