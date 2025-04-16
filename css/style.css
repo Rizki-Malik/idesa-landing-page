@@ -1417,7 +1417,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
+    min-height: 100vh;
     padding: 2rem 0;
     width: 100%;
     overflow: hidden;
@@ -1555,17 +1555,6 @@ body {
 
 .bg-primary {
     background-color: #0d6efd;
-}
-
-.dashboard-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    padding: 2rem 0;
-    width: 100%;
-    overflow: hidden;
 }
 
 .user-avatars {
@@ -1756,11 +1745,6 @@ body {
     width: 5px;
 }
 
-.connector-point:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-}
-
 .inner-circle {
     width: 10px;
     height: 10px;
@@ -1836,8 +1820,8 @@ body {
 .left-connector {
     position: absolute;
     top: 50%;
-    right: -75px;
-    width: 80px;
+    right: -460%;
+    width: 450%;
     height: 2px;
     background-color: white;
     transform: translateY(-50%);
@@ -1852,21 +1836,12 @@ body {
 .right-connector {
     position: absolute;
     top: 11.5px;
-    left: -32px;
-    width: 40px;
+    left: -300%;
+    width: 300%;
     height: 2px;
     background-color: white;
     transform: translateY(-50%);
     transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 1621px) {
-    .vertical-connector-right {
-        bottom: 4%;
-        background-color: black; /* Using primary color variable instead of black */
-        width: 3px; /* Increased width for better visibility */
-        height: 561px; /* Maintain consistent height */
-    }
 }
 
 .connector-point-right .right-connector {
@@ -1883,16 +1858,38 @@ body {
 
 .vertical-connector-left {
     left: 22.8%;
-    top: 127px;
+    top: 335px;
+    /* top: 30.5%; */
     height: 370px;
     background-color: var(--secondary);
 }
 
 .vertical-connector-right {
     right: 24%;
-    bottom: 48px;
+    bottom: 22.5%;
+    bottom: 257px;
+    /* bottom: 22.5%; */
     height: 561px;
     background-color: var(--primary);
+}
+
+@media (max-width: 1468px) {
+    .vertical-connector-left {
+        left: 22.8%;
+        top: 291px;
+        /* top: 30.5%; */
+        height: 370px;
+        background-color: var(--secondary);
+    }
+    
+    .vertical-connector-right {
+        right: 24%;
+        bottom: 22.5%;
+        bottom: 213.5px;
+        /* bottom: 22.5%; */
+        height: 561px;
+        background-color: var(--primary);
+    }
 }
 
 @media (max-width: 1350px) {
