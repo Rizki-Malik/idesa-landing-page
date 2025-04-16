@@ -320,6 +320,10 @@ a{
     height: 109vh !important;
 }
 
+#eis{
+    background-color: #000000;
+}
+
 /* Animasi About IMG */
 .about-img {
     width: 150px;
@@ -1473,6 +1477,14 @@ body {
     width: 100%;
 }
 
+.chip{
+    border: #ddd 1px solid;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 5%;
+}
+
 .laptop-image {
     width: 100%;
     max-width: 500px;
@@ -2034,7 +2046,6 @@ body {
     .feature-group {
         width: 100%;
         justify-content: flex-start;
-        padding-left: 1rem;
     }
     
     .feature-content {
